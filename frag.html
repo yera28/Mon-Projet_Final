@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet final yera</title>
+    <script src="app.js" async></script>
+    <link rel="stylesheet" href="fantoos.css">
+</head>
+<body>
+
+    <div class="contenu_ouvrant">
+        <div class="reglesquiz">
+            <h1>Application de QCM</h1><br>
+            <hr>
+            <h3> <strong>&#10032;</strong> Attention s'il vous plait 🤝</h3>
+            <p> 1. Vous auriez seulement  <span>6 Questions et 8 secondes</span> pour répondre chaque question posée <br>
+                2. Une fois que vous Selectionnez une reponse , vous avez la possibilité de changer la réponse avant que le temps ne s'écoule <br>
+                3. Vous ne pouvez selectionner aucune option une fois que le temps est écoulé <br>
+                4. Vous n'aurez pas le temps de sortir une fois que vous commencer le jeu <br>
+                5. Vous auriez le nombre de point en pourcentage, en fonction de votre reponse correcte <br>
+                <strong>Soyez vigilant dans votre démarche <br> pour avoir plus de points</strong>
+            </p>
+            <button id="mon_affiche">Commencez ici...👍</button>
+        </div>
+    </div>
+        <div class="contenu_general">
+            <div class="sous_contenugenaral">
+                <div class="mes_questions">
+                    <h2>Question: 1</h2>
+                    <p>Que signifie HTML ?</p>
+                <div class="mes_inputs">
+                    <input type="radio" name="q1" value="Hyper Text for Eat">  Hyper Text for Eat <br>
+                    <input type="radio" name="q1" value="Hyper Text but to understand ">  Hyper Text but to understand <br>
+                    <input type="radio" name="q1" value="Hyper Text Markup Language">  Hyper Text Markup Language <br>
+                    <input type="radio" name="q1" value="Hyper Text for Loock">  Hyper Text for Loock <br>
+                </div>
+                </div>
+                <section>
+                    <button id="finish" onclick="calculateScore()">TERMINER</button>
+                    <div class="commentaire_reponse"></div>
+                    <div class="progress-bar">
+                        <div class="progress" id="bar_progress"></div>
+                    </div>
+                    <div class="resultat"></div>
+                    
+                </section>
+                <br><br>
+            </div>
+        </div>
+  
+    
+</body>
+</html>
